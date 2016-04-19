@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Taski z angularem</title>
+		<script type="text/ng-template" id="/task-list.html">
+		<ol>
+	<li ng-repeat="task in tasks.tasks">
+		<h3>{{task.name}}</h3>
+		{{task.assignedTo}}
+	</li>
+</ol>
+		</script>
+		</head>
+		<body ng-app="biztasks">
+			<task-list></task-list>
+			<script src="./js/angular.js" type="text/javascript"></script>
+			<script src="./js/app.js" type="text/javascript"></script>
+		</body>
+	</html>
